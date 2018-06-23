@@ -2,7 +2,7 @@ angular.module('aotr', [])
 .controller('personal_information', function($scope, $http) {
     $http.
     get(
-        'http://dev.iframeinterface.com/animesh-info',
+        'https://dev.iframeinterface.com/animesh-info',
         {
         params:  {},
         headers: {'Access-Control-Allow-Origin': '*'}
