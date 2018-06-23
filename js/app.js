@@ -6,8 +6,8 @@ angular.module('aotr', [])
         {
         params:  {},
         headers: {
-            'Access-Control-Allow-Origin': '*';
-            'Access-Control-Allow-Origin':true;
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin':true
         }
     }
     ).
