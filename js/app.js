@@ -5,10 +5,9 @@ angular.module('aotr', [])
         'https://raw.githubusercontent.com/aotr/cv/master/js/info.json',
         {
         params:  {},
-        headers: {
-            
+        headers: {   
+            }
         }
-    }
     ).
     then(function(response) {
                 console.info(response);
