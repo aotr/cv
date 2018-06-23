@@ -1,1 +1,134 @@
-<h1>Hello</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" ng-app="aotr">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0-rc.0/angular.js" integrity="sha256-A/+42FJ7wWJxDrRWCeXl34QRmRwJXMrcM6d8YY6p7dI=" crossorigin="anonymous"></script>
+     <script src="js/app.js"></script>
+     <title>Resume</title>
+    
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
+</head>
+
+<body>
+
+    <div  id="page-wrap" ng-controller="personal_information">
+    
+        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+    
+        <div id="contact-info" class="vcard" >
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">{{personal_information.name | titleCase}}</h1>
+            <h2>
+                {{personal_information.my_role}}
+            </h2>
+
+        
+            <p>
+                Cell: 
+                
+                <span ng-repeat="item in personal_information.phone">
+                        <span class="tel">{{item}}</span><br />
+                        &nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp; 
+                </span>
+                Email: <span ng-repeat="item in personal_information.email">
+                            <a class="email" href="mailto:{{item}}">{{item}}</a></span>
+                            </br>
+                        </span>
+            </p>
+        </div>
+                
+        <div id="objective">
+            <p>
+                {{personal_information.about_me}}
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt >Education</dt>
+            <dd ng-repeat="education in educations">
+                <div ng-if="education.displayable" >
+                        <h2>{{education.title }} - {{education.institute_sort_name }}</h2>
+                        <p>
+                            <strong>Institute Name:</strong> {{education.institute_name }}<br />
+                            <strong>Year:</strong> {{education.pass_year}}
+                        </p>
+                </div>
+                
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Skills</dt>
+            <dd ng-repeat="(key,value) in skills" >
+                <h2>{{key | titleCase}}</h2>
+                <p  >{{value.join(', ')}}</p>
+            </dd>
+            
+            
+            <dd class="clear"></dd>
+            
+            <dt>Experience</dt>
+            <dd>
+                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
+                <ul>
+                    <li>Inspired and won highest peasant death competition among servants</li>
+                    <li>Helped coordinate managers to grow cult following</li>
+                    <li>Provided untimely deaths to all who opposed</li>
+                </ul>
+                
+                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
+                <ul>
+                    <li>Worked on grass-roots promotional campaigns</li>
+                    <li>Reduced theft and property damage percentages</li>
+                    <li>Janitorial work, Laundry</li>
+                </ul> 
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>References</dt>
+            <dd>Available on request</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
+
+</body>
+
+</html>
