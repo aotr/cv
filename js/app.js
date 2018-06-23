@@ -5,7 +5,10 @@ angular.module('aotr', [])
         'https://dev.iframeinterface.com/animesh-info',
         {
         params:  {},
-        headers: {'Access-Control-Allow-Origin': '*'}
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin':true
+        }
     }
     ).
     then(function(response) {
