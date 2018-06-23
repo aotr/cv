@@ -2,7 +2,7 @@ angular.module('aotr', [])
 .controller('personal_information', function($scope, $http) {
     $http.
     get(
-        'https://dev.iframeinterface.com/animesh-info',
+        'https://raw.githubusercontent.com/aotr/cv/master/js/info.json',
         {
         params:  {},
         headers: {
