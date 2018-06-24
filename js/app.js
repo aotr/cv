@@ -10,7 +10,7 @@ angular.module('aotr', [])
         }
     ).
     then(function(response) {
-                console.info(response);
+                // console.info(response);
                 $scope.personal_information = response.data.personal_information;
                 $scope.skills = response.data.skills;
                 $scope.educations = response.data.education;

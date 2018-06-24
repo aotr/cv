@@ -93,11 +93,13 @@
             
             <dt>Experience</dt>
             <dd>
-                <div ng-repeat="(key,value) in experiences">
-                    <h2>Doomsday Cult
-                        <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
+                <div ng-repeat="experience in experiences">
+                    <h2>{{experience.name}}
+                        <span>{{experience.role}}-</br>{{experience.join_time}}-{{experience.release_time}}</span>
                     </h2>
-                    <ul>
+                    <h5>{{experience.address}}</h5>
+                    <ul ng-repeat="project in experience.project">
+                        {{project}}
                         <li>Inspired and won highest peasant death competition among servants</li>
                         <li>Helped coordinate managers to grow cult following</li>
                         <li>Provided untimely deaths to all who opposed</li>
