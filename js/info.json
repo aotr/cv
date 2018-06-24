@@ -122,5 +122,117 @@
             "score_displayable": true,
             "displayable": false
         }
-    ]
+    ],
+    "Experience": {
+        "company_name": {
+            "name": "Dynamic Commodities Pvt. Ltd",
+            "address": "Technopolis,14th Floor, BP-4, Sector V,Salt Lake City,Kolkata-700091",
+            "role": "Jr. Software DEVELOPER",
+            "join_time": "JUNE 2016",
+            "release_time": "NOW",
+            "project": [
+                {
+                    "project_name": "Dynamic Levels",
+                    "project_description": "It is a brokerage firm. It\u2019s also acquired the Membership of the below exchanges NSE, BSE, USE, NSDL, CDSL, MCX, NCDEX.",
+                    "project_url": "www.dynamiclevels.com",
+                    "project_role": "Developer of Dynamic Levels official website",
+                    "technology_use": {
+                        "Frameworks:": [
+                            "CodeIgniter",
+                            "WordPress",
+                            "jQuery"
+                        ],
+                        "back_end_languages": [
+                            "Core PHP"
+                        ],
+                        "data_interchange_format_type": [
+                            "JSON",
+                            "XML"
+                        ]
+                    }
+                },
+                {
+                    "project_name": "Developer of DLEVELS App (iOS)",
+                    "project_description": "",
+                    "project_url": "https:\/\/itunes.apple.com\/in\/app\/dlevels\/id1204153729",
+                    "project_role": "Developer of DLEVELS official App",
+                    "technology_use": {
+                        "code": [
+                            "SWIFT"
+                        ],
+                        "architecture": [
+                            "Core PHP"
+                        ],
+                        "tools": [
+                            "Xcode",
+                            "Instruments"
+                        ],
+                        "web_service": [
+                            "RESTful API in Lumen"
+                        ]
+                    }
+                },
+                {
+                    "project_name": "World Pranic Healing",
+                    "project_description": "It\u2019s is the official website for Gmcks Pranic Healing in the Philippines, India, East and West Africa, Mauritius, Middle East, South East and South Asia areas.",
+                    "project_url": "www.worldpranichealing.com",
+                    "project_role": "Developer of World Pranic Healing official website",
+                    "technology_use": {
+                        "information": [
+                            "Same as Dynamic Levels official website"
+                        ]
+                    }
+                },
+                {
+                    "project_name": "Pranic Healing Official",
+                    "project_description": "Its help finds and connects with trusted Healer online. Book appointments with the best Healer instantly, store and share your medical records with doctors.",
+                    "project_url": "It hasn't been released yet, it\u2019s in development phase.",
+                    "project_role": "Developer of Pranic Healing Official ( IOS )",
+                    "technology_use": {
+                        "information": [
+                            "Same as DLEVELS App"
+                        ]
+                    }
+                },
+                {
+                    "project_name": "PH Authorized healers",
+                    "project_description": "It\u2019s Simple and clinic practice manager for Healers. Its help manage patient online. Manage healing appointments. Record treatments, track payment due and more.",
+                    "project_url": "It hasn't been released yet, it\u2019s in development phase.",
+                    "project_role": "Developer of  PH Authorized healers( IOS )",
+                    "technology_use": {
+                        "information": [
+                            "Same as DLEVELS App"
+                        ]
+                    }
+                },
+                {
+                    "project_name": "Dynamic Levels Account Opening",
+                    "project_description": "Open a demat & trading account online and manage shares, securities & investments with Paperless A\/c opening as the name suggests is ZERO PAPERWORK A\/c opening? facilitated by Aadhaar ID",
+                    "project_url": "https:\/\/account-opening.dynamiclevels.com",
+                    "project_role": "Developer of  PH Authorized healers( IOS )",
+                    "technology_use": {
+                        "information": [
+                            "Same as Dynamic Levels official website with CORE PHP"
+                        ]
+                    }
+                },
+                {
+                    "project_name": "Portfolio Management Services (PMS)",
+                    "project_description": "",
+                    "project_url": "www.dynamiclevels.com\/pms\/",
+                    "project_role": "Developer of Dynamic levels - Portfolio Management System",
+                    "technology_use": {
+                        "Frameworks:": [
+                            "AngularJS",
+                            "CodeIgniter"
+                        ],
+                        "data_interchange_format_type": [
+                            "JSON",
+                            "XML"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
 }
