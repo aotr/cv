@@ -14,6 +14,8 @@ angular.module('aotr', [])
                 $scope.personal_information = response.data.personal_information;
                 $scope.skills = response.data.skills;
                 $scope.educations = response.data.education;
+                $scope.experiences = response.data.experience;
+                console.log($scope.experiences);
             });
     
     }).
