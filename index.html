@@ -99,10 +99,14 @@
                     </h2>
                     <h5>{{experience.address}}</h5>
                     <ul ng-repeat="project in experience.project">
-                        {{project}}
-                        <li>Inspired and won highest peasant death competition among servants</li>
-                        <li>Helped coordinate managers to grow cult following</li>
-                        <li>Provided untimely deaths to all who opposed</li>
+                        <h3>{{project.project_name}}</h3>
+                        <strong>Project Description:</strong> {{project.project_description }}<br />
+                        <strong>Project URL:</strong> {{project.project_url }}<br />
+                        <strong>Project Role:</strong> {{project.project_role }}<br />
+                        <strong>Technology Use:</strong><br />
+                        <div ng-repeat="(technology_type,technology) in project.technology_use">
+                            <li><strong>{{technology_type | titleCase}}:</strong>&nbsp;{{technology.join(', ')}}</li>
+                        </div>
                     </ul>
                 </div>
             </dd>
@@ -110,7 +114,7 @@
             <dd class="clear"></dd>
             
             <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+            <dd>{{hobbies.join(', ')}}</dd>
             
             <dd class="clear"></dd>
             
@@ -118,6 +122,11 @@
             <dd>Available on request</dd>
             
             <dd class="clear"></dd>
+            <dt>QR</dt>
+            <dd>Available on request</dd>
+            
+            <dd class="clear"></dd>
+
         </dl>
         
         <div class="clear"></div>
